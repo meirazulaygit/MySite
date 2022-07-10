@@ -1,25 +1,28 @@
-/*------------------------------------------------------*/
-/*© 2022 Nitzan Dolinsky.  All rights reserved*/
-/*------------------------------------------------------*/
-
-/*---------------------box----------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400;500;600;700&display=swap");
+/*---------------------global----------------------------*/
+* {
+  /*Set the line height for the element*/
+  line-height: 150%;
+  /*The vertical-align property sets the 
+	vertical alignment of an element.*/
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
+  word-spacing: 6px;
+}
+body {
+  background-color: #fff8f3;
+}
 img {
   max-width: 100%;
 }
-
-.content {
-  padding: 25px;
-}
-
-.box_left {
-  width: 48%;
-}
-
-.box_right {
-  width: 49%;
-}
-
 /*-----------------navigation bar--------------------*/
+.menu {
+  background: black;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 0 2rem silver;
+}
 .menu li {
   display: inline-block;
 }
@@ -29,28 +32,80 @@ img {
 	To fix our overlapping issue for our navigation menu 
 	bar, we can override the default to display:block
 	*/
+  font-family: "Edu VIC WA NT Beginner", cursive;
   display: inline-block;
-  font-size: 25px;
-  padding: 20px;
+  font-size: 1.5rem;
+  padding: 15px;
   text-decoration: none;
+  color: aliceblue;
+}
+/*---------------------box----------------------------*/
+
+.main {
+  width: 100%;
+  /* background: purple; */
+  /* padding: 10px; */
+}
+
+.box_left {
+  display: inline-block;
+  width: 45%;
+  margin: 20px 20px 0 20px;
+  /* background: black; */
+}
+
+.box_right {
+  display: inline-block;
+  width: 45%;
+  margin: 20px 20px 0 20px;
+  /* background: blue; */
+}
+
+.box_right_bottom {
+  margin-bottom: 2rem;
+}
+
+.content {
+  border: 2px solid brown;
+  border-radius: 50px;
+  overflow: hidden;
+  text-align: center;
+  color: #000000;
+  box-shadow: 0 0 1.3rem black;
+}
+
+.content h4 {
+  font-size: 1.25rem;
+}
+
+.content img {
+  width: 100%;
+}
+
+.box {
+  margin-bottom: 2rem;
 }
 
 /*---------------------header----------------------------*/
-.header {
+.header_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header_text {
   text-align: center;
   margin: 20px;
+  padding: 10px 20px;
+  color: #ffcb9c;
+  display: inline-block;
+  background-color: #b47741;
+  border-radius: 20px;
+  text-shadow: 0 0 1rem black;
 }
 
-/*---------------------global----------------------------*/
-* {
-  /*Set the line height for the element*/
-  line-height: 150%;
-  /*The vertical-align property sets the 
-	vertical alignment of an element.*/
-  vertical-align: top;
-  font-family: georgia;
-  margin: 0;
-  word-spacing: 6px;
+.home_img {
+  width: 100%;
+  padding-top: 60px;
 }
 
 /*---------------------image----------------------------*/
@@ -69,8 +124,21 @@ img {
 
 /*---------------------footer----------------------------*/
 .footer {
-  border-top: 1px solid;
-  font-size: 20px;
+  font-size: 1.2rem;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.5),
+    rgba(165, 42, 42, 0.8)
+  );
+  text-align: center;
+}
+
+.footer h3 {
+  color: #ffcb9c;
+}
+
+.footer_content p {
+  display: inline-block;
 }
 
 /*---------------------border---------------------------*/
@@ -80,7 +148,4 @@ img {
 
 /*---------------------media----------------------------*/
 @media (max-width: 700px) /*At less of 700px width*/ {
-  .box {
-    width: 100%; /*u_1_2 width is 100% instead of 50% */
-  }
 }
