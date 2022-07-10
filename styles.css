@@ -1,14 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400;500;600;700&display=swap");
 /*---------------------global----------------------------*/
 * {
-  /*Set the line height for the element*/
+  font-family: "Edu VIC WA NT Beginner", cursive;
   line-height: 150%;
-  /*The vertical-align property sets the 
-	vertical alignment of an element.*/
   vertical-align: top;
   margin: 0;
   padding: 0;
-  word-spacing: 6px;
+  text-decoration: none;
 }
 body {
   background-color: #fff8f3;
@@ -17,10 +15,19 @@ img {
   max-width: 100%;
 }
 /*-----------------navigation bar--------------------*/
-.menu {
-  background: black;
+.top_menu {
   position: fixed;
   width: 100%;
+}
+
+.menu {
+  background: linear-gradient(
+    180deg,
+    rgba(180, 119, 65, 0.7) 0%,
+    rgba(255, 211, 172, 0.7) 95%
+  );
+
+  padding: 0.5rem;
   box-shadow: 0 0 2rem silver;
 }
 .menu li {
@@ -28,35 +35,70 @@ img {
 }
 
 .menu a {
-  /*
-	To fix our overlapping issue for our navigation menu 
-	bar, we can override the default to display:block
-	*/
-  font-family: "Edu VIC WA NT Beginner", cursive;
   display: inline-block;
-  font-size: 1.5rem;
-  padding: 15px;
+  font-size: 1rem;
   text-decoration: none;
   color: aliceblue;
+  transition: 0.3s;
 }
+.menu a:hover {
+  font-size: 1.2rem;
+  color: #000000;
+}
+
+.menu a:hover span {
+  color: #b47741;
+  font-weight: 500;
+}
+
+/*---------------------image----------------------------*/
+.home_img {
+  width: 100%;
+  padding-top: 2.5rem;
+}
+.home_img img {
+  max-width: 100%;
+}
+
+/*---------------------header----------------------------*/
+.header_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header_text {
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 20px auto;
+  padding: 10px 20px;
+  color: #ffcb9c;
+  display: inline-block;
+  background-color: #b47741;
+  border-radius: 20px;
+  text-shadow: 0 0 1rem black;
+}
+
 /*---------------------box----------------------------*/
 
 .main {
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   /* background: purple; */
   /* padding: 10px; */
 }
 
 .box_left {
   display: inline-block;
-  width: 45%;
+  width: 40%;
   margin: 20px 20px 0 20px;
   /* background: black; */
 }
 
 .box_right {
   display: inline-block;
-  width: 45%;
+  width: 40%;
   margin: 20px 20px 0 20px;
   /* background: blue; */
 }
@@ -66,7 +108,7 @@ img {
 }
 
 .content {
-  border: 2px solid brown;
+  border: 2px solid rgb(87, 50, 50);
   border-radius: 50px;
   overflow: hidden;
   text-align: center;
@@ -86,65 +128,41 @@ img {
   margin-bottom: 2rem;
 }
 
-/*---------------------header----------------------------*/
-.header_container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.header_text {
-  text-align: center;
-  margin: 20px;
-  padding: 10px 20px;
-  color: #ffcb9c;
-  display: inline-block;
-  background-color: #b47741;
-  border-radius: 20px;
-  text-shadow: 0 0 1rem black;
-}
-
-.home_img {
-  width: 100%;
-  padding-top: 60px;
-}
-
-/*---------------------image----------------------------*/
-.home_img img {
-  max-width: 100%;
-}
-
-/*---------------------button----------------------------*/
-.button_submit {
-  font-size: 30px;
-  padding: 20px;
-  border: 3px solid;
-  border-radius: 4px; /*	Add rounded corners to the element	*/
-  margin: 20px;
-}
-
 /*---------------------footer----------------------------*/
 .footer {
+  min-height: 8rem;
   font-size: 1.2rem;
   background: linear-gradient(
     180deg,
-    rgba(255, 255, 255, 0.5),
-    rgba(165, 42, 42, 0.8)
+    rgba(255, 255, 255, 0.2),
+    rgba(180, 119, 65, 0.7)
   );
   text-align: center;
 }
 
 .footer h3 {
   color: #ffcb9c;
+  text-shadow: 0 0 1rem #000000;
+  margin-bottom: 1.5rem;
 }
 
-.footer_content p {
-  display: inline-block;
+.footer .contact {
+  font-size: 1rem;
+  align-self: center;
+  font-weight: 500;
+  color: rgb(87, 50, 50);
+  background: linear-gradient(
+    rgba(180, 119, 65, 0.7) 20%,
+    rgba(255, 211, 172, 0.7) 100%
+  );
+  padding: 0.3rem 0.5rem;
+  border-radius: 1rem;
 }
 
-/*---------------------border---------------------------*/
-/* .border_line {
-    border: 1px solid;
-} */
+.footer .autor {
+  margin-top: 0.5rem;
+  color: rgba(85, 85, 85, 0.7);
+}
 
 /*---------------------media----------------------------*/
 @media (max-width: 700px) /*At less of 700px width*/ {
