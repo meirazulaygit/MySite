@@ -29,9 +29,9 @@ img {
     rgba(180, 119, 65, 0.7) 0%,
     rgba(255, 211, 172, 0.7) 100%
   );
-
-  padding: 0.5rem;
+  padding: 1rem;
   box-shadow: 0 0 2rem silver;
+  border-bottom: 1px solid rgb(66, 38, 14);
 }
 .menu li {
   display: inline-block;
@@ -39,26 +39,29 @@ img {
 
 .menu a {
   display: inline-block;
-  font-size: 1rem;
+  font-size: 1.3rem;
   text-decoration: none;
-  color: aliceblue;
+  color: rgb(66, 38, 14);
   transition: 0.3s;
   padding-left: 1.5rem;
+  text-shadow: 0 0 0.3rem rgb(66, 38, 14);
+  letter-spacing: 3px;
 }
 .menu a:hover {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   color: #3a3a3a;
+  text-shadow: 0 0 0.5rem #3a3a3a;
 }
 
 .menu a:hover span {
-  color: #5e3a1b;
+  color: rgb(94, 58, 27);
   font-weight: 500;
 }
 
 /*---------------------image----------------------------*/
 .home_img {
   width: 100%;
-  padding-top: 2.5rem;
+  padding-top: 3.5rem;
 }
 .home_img img {
   max-width: 100%;
@@ -111,6 +114,10 @@ img {
   margin-bottom: 2rem;
 }
 
+.box {
+  margin-bottom: 2rem;
+}
+
 .content {
   border: 2px solid rgb(87, 50, 50);
   border-radius: 50px;
@@ -120,16 +127,18 @@ img {
   box-shadow: 0 0 1.3rem black;
 }
 
-.content h4 {
-  font-size: 1.25rem;
-}
-
 .content img {
   width: 100%;
 }
 
-.box {
-  margin-bottom: 2rem;
+.content h4 {
+  font-size: 2rem;
+  padding-top: 1rem;
+  color: rgb(87, 50, 50);
+}
+
+.content p {
+  padding: 1.5rem 0;
 }
 
 /*---------------------footer----------------------------*/
@@ -162,6 +171,7 @@ img {
   padding: 0.3rem 0.5rem;
   border-radius: 1rem;
   transition: 0.3s;
+  border: 2px solid rgb(87, 50, 50);
 }
 
 .footer .contact:hover {
@@ -173,7 +183,17 @@ img {
   margin-top: 0.8rem;
   color: rgba(85, 85, 85, 0.7);
 }
-
+/* ========= Scupturs Pagec ======== */
+.main_sculp_page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 3.5rem;
+}
+.container_sculpturs {
+  background-color: #3a3a3a;
+  width: 90vw;
+}
 /*---------------------media----------------------------*/
 @media (max-width: 700px) /*At less of 700px width*/ {
 }
