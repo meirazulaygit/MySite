@@ -185,14 +185,44 @@ img {
 }
 /* ========= Scupturs Pagec ======== */
 .main_sculp_page {
-  width: 100%;
-  display: flex;
-  justify-content: center;
   padding-top: 3.5rem;
+  width: 100%;
+  text-align: center;
+  /* background-color: red; */
 }
-.container_sculpturs {
-  background-color: #3a3a3a;
-  width: 90vw;
+
+.main_sculp_page h1 {
+  padding: 1rem 0;
+  color: rgb(87, 50, 50);
+}
+
+.container_products_left {
+  display: inline-block;
+  width: 45%;
+}
+
+.container_products_left div {
+  border: 2px solid rgb(87, 50, 50);
+  margin: 0.75rem 0.25rem;
+}
+
+.container_products_left h2 {
+  padding: 0.8rem 0;
+}
+
+.container_products_right div {
+  border: 2px solid rgb(87, 50, 50);
+  margin: 0.75rem 0.25rem;
+}
+
+.container_products_right h2 {
+  padding: 0.8rem 0;
+}
+.container_products_right {
+  display: inline-block;
+  margin-bottom: 3.5rem;
+  /* background-color: blue; */
+  width: 45%;
 }
 /*---------------------media----------------------------*/
 @media (max-width: 700px) /*At less of 700px width*/ {
