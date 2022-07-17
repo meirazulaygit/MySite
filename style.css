@@ -196,6 +196,23 @@ img {
   color: rgb(87, 50, 50);
 }
 
+.main_sculp_page p {
+  margin: 0.75rem 0.25rem;
+}
+
+.main_sculp_page img {
+  display: block;
+  width: 100%;
+}
+
+.main_sculp_page button {
+  margin: 0.85rem 0;
+  padding: 0.25rem 1rem;
+  background-color: #ffcb9c;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
 .container_products_left {
   display: inline-block;
   width: 45%;
