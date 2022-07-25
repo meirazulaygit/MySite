@@ -241,6 +241,118 @@ img {
   /* background-color: blue; */
   width: 45%;
 }
+
+/* ========= Vases Page ======== */
+
+.main-vases-page {
+  margin: 0 1rem;
+  padding: 4rem 3rem;
+}
+
+.container-vase {
+  width: 100%;
+}
+
+.main-vases-page h1 {
+  text-align: center;
+}
+
+.box-vase {
+  display: inline-block;
+  /* width: 50%; */
+  padding: 1.5rem 2rem;
+  border-bottom: 3px solid black;
+}
+
+.box-vase h3 {
+  margin: 0.4rem 0;
+}
+
+.box-vase img {
+  margin-top: 0.5rem;
+}
+
+.box-vase button {
+  padding: 0.25rem 1rem;
+  margin-top: 4rem;
+  background-color: #ffcb9c;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+/* ------------------- Product Page ------------------- */
+.header_products {
+  margin-bottom: 2rem;
+  padding-top: 4rem;
+  text-align: center;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid brown;
+}
+
+.content_main_photo {
+  text-align: center;
+}
+
+.content_main_photo h2 {
+  padding-top: 1rem;
+}
+
+.content_main_photo p {
+  padding: 1rem 4rem;
+}
+
+.second_product_photo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.second_product_text {
+  padding: 0 2rem;
+}
+
+.third_product_photo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.third_product_text {
+  padding: 0 2rem;
+}
+
 /*---------------------media----------------------------*/
-@media (max-width: 700px) /*At less of 700px width*/ {
+/* Until 468px screen width */
+@media screen and (max-width: 576px) {
+  .menu a {
+    font-size: 0.85rem;
+    padding-left: 0.5rem;
+  }
+  .box-vase {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .menu a {
+    font-size: 1.2rem;
+    padding-left: 0.8rem;
+  }
+  .box-vase {
+    width: 35%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .menu a {
+    font-size: 1.5rem;
+    padding-left: 1.5rem;
+  }
+  /* .box-vase {
+    width: 40%;
+    align-content: center;
+  } */
 }
