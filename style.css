@@ -356,30 +356,30 @@ button a {
 /*---------------------media----------------------------*/
 /* Until 468px screen width */
 @media screen and (max-width: 576px) {
-  .menu a {
+  /* .menu a {
     font-size: 0.85rem;
     padding-left: 0.5rem;
-  }
+  } */
   /* .box-vase {
     width: 90%;
   } */
 }
 
 @media screen and (min-width: 600px) {
-  .menu a {
+  /* .menu a {
     font-size: 1.2rem;
     padding-left: 0.8rem;
-  }
+  } */
   /* .box-vase {
     width: 35%;
   } */
 }
 
 @media screen and (min-width: 992px) {
-  .menu a {
+  /* .menu a {
     font-size: 1.5rem;
     padding-left: 1.5rem;
-  }
+  } */
   /* .box-vase {
     width: 40%;
     align-content: center;
