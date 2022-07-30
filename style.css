@@ -14,6 +14,12 @@ body {
 img {
   max-width: 100%;
 }
+
+button a{
+color: rgb(87, 50, 50);
+font-size: 1.3rem;
+font-weight: bolder;
+}
 /*-----------------navigation bar--------------------*/
 .top_menu {
   width: 100%;
@@ -156,32 +162,35 @@ img {
 .footer h3 {
   color: rgb(87, 50, 50);
   text-shadow: 0 0.3rem 0.5rem #000000;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2.5rem;
+  font-size: 2rem;
 }
 
 .footer .contact {
-  font-size: 0.85rem;
+  font-size: 1rem;
   align-self: center;
-  font-weight: 500;
+  font-weight: bolder;
   color: rgb(87, 50, 50);
   background: linear-gradient(
     rgba(180, 119, 65, 0.7) 20%,
     rgba(255, 211, 172, 0.7) 100%
   );
-  padding: 0.3rem 0.5rem;
+  padding: 0.3rem 4rem;
   border-radius: 1rem;
   transition: 0.3s;
   border: 2px solid rgb(87, 50, 50);
 }
 
 .footer .contact:hover {
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 
 .footer .autor {
   font-size: 0.85rem;
   margin-top: 0.8rem;
-  color: rgba(85, 85, 85, 0.7);
+  padding: 1.5rem 0;
+  color: rgba(87, 50, 50, 0.8);
+  font-weight: bold;
 }
 /* ========= Scupturs Pagec ======== */
 .main_sculp_page {
@@ -251,25 +260,44 @@ img {
 
 .container-vase {
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
 }
 
 .main-vases-page h1 {
   text-align: center;
+  color: rgb(87, 50, 50);
+  padding: 1rem;
+  border-bottom: 2px solid #ffcb9c;
 }
 
-.box-vase {
+.container-vase-left {
   display: inline-block;
-  /* width: 50%; */
+  width: 50%;
+  margin: 3rem 2rem;
   padding: 1.5rem 2rem;
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid #ffcb9c;
 }
 
+.container-vase-ritgh{
+  display: inline-block;
+  width: 50%;
+  padding: 1.5rem 2rem;
+  border-bottom: 3px solid #ffcb9c;
+}
+
+.box-vase{
+  margin: 2rem;
+}
 .box-vase h3 {
   margin: 0.4rem 0;
 }
 
 .box-vase img {
   margin-top: 0.5rem;
+  display: block;
 }
 
 .box-vase button {
@@ -278,15 +306,18 @@ img {
   background-color: #ffcb9c;
   border-radius: 0.25rem;
   cursor: pointer;
+  
 }
 
-/* ------------------- Product Page ------------------- */
+
+/* ------------------- Products Page ------------------- */
 .header_products {
   margin-bottom: 2rem;
   padding-top: 4rem;
   text-align: center;
   padding-bottom: 1rem;
   border-bottom: 2px solid brown;
+  color: rgb(87, 50, 50);
 }
 
 .content_main_photo {
@@ -306,6 +337,7 @@ img {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  padding-left: 2rem;
 }
 
 .second_product_text {
@@ -317,7 +349,7 @@ img {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin: 2rem;
+  margin-right: 2rem;
 }
 
 .third_product_text {
@@ -330,10 +362,10 @@ img {
   .menu a {
     font-size: 0.85rem;
     padding-left: 0.5rem;
-  }
+  /* }
   .box-vase {
     width: 90%;
-  }
+  } */
 }
 
 @media screen and (min-width: 600px) {
@@ -341,9 +373,9 @@ img {
     font-size: 1.2rem;
     padding-left: 0.8rem;
   }
-  .box-vase {
+  /* .box-vase {
     width: 35%;
-  }
+  } */
 }
 
 @media screen and (min-width: 992px) {
