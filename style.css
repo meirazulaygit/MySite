@@ -15,10 +15,10 @@ img {
   max-width: 100%;
 }
 
-button a{
-color: rgb(87, 50, 50);
-font-size: 1.3rem;
-font-weight: bolder;
+button a {
+  color: rgb(87, 50, 50);
+  font-size: 1.3rem;
+  font-weight: bolder;
 }
 /*-----------------navigation bar--------------------*/
 .top_menu {
@@ -263,7 +263,6 @@ font-weight: bolder;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 }
 
 .main-vases-page h1 {
@@ -281,14 +280,14 @@ font-weight: bolder;
   border-bottom: 3px solid #ffcb9c;
 }
 
-.container-vase-ritgh{
+.container-vase-ritgh {
   display: inline-block;
   width: 50%;
   padding: 1.5rem 2rem;
   border-bottom: 3px solid #ffcb9c;
 }
 
-.box-vase{
+.box-vase {
   margin: 2rem;
 }
 .box-vase h3 {
@@ -306,9 +305,7 @@ font-weight: bolder;
   background-color: #ffcb9c;
   border-radius: 0.25rem;
   cursor: pointer;
-  
 }
-
 
 /* ------------------- Products Page ------------------- */
 .header_products {
@@ -362,8 +359,8 @@ font-weight: bolder;
   .menu a {
     font-size: 0.85rem;
     padding-left: 0.5rem;
-  /* }
-  .box-vase {
+  }
+  /* .box-vase {
     width: 90%;
   } */
 }
